@@ -1,7 +1,10 @@
-# FTP-system-project
+# FTP-System-Project
 Network Programing Project(Online System Storage)
 
-Group 4:Client part
+To do : Client 
+==================================
+
+Group 4:3 members 
 ===================================
 
 Student Infor
