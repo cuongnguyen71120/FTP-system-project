@@ -13,8 +13,6 @@
 #include<arpa/inet.h>
 #include<netinet/in.h>
 
-
-
 //constant 
 #define PORT 8000;
 #define MAX 1000 
@@ -25,11 +23,5 @@ struct command{
     char argum[260];
     char code[10];
 };
-
-
-
-// Trimming whiteshpace and line ending characters from a string
-void trimstr(char *str, int n);
-
 
 #endif
