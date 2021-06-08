@@ -9,9 +9,6 @@ char *addrtype(int addr_type);
 // To read data from keyboard 
 void read_input(char *buffer, int size);
 
-//Create this function to list command to help user are using easier and it has function look like linux command
-//int client_command(char *buf, int size, struct command *structcmd );
-
 // sending the command 
 int client_send_cmd(struct command *cmd);
 
