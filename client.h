@@ -3,9 +3,6 @@
 
 #include"../common/common.h"
 
-// Option for IPv6 or IPv4 addresses
-char *addrtype(int addr_type);
-
 // To read data from keyboard 
 void read_input(char *buffer, int size);
 

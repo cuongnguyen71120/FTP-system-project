@@ -7,7 +7,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>  //inet_addr
 #include<fcntl.h>
-#define PORT 8784;
+#define PORT 8000;
 #define MAXSIZE 1000 
 //#include<sys/sendfile.h>
 #include<sys/stat.h>
@@ -66,10 +66,12 @@ void client_login(){
 
     //getting username from user 
     printf("Username: ");
-    fflush(stdout);
-    read_input(user,256);
+    scanf("%s",user);
+    //read_input(user,256);
     //fflush(stdout);
-    char *pass = getpass("Password: ");
+    char pass[256];
+    printf("Password: ");
+    scanf("%s",pass);
 
     sprintf(cmd.argum, "%s\t%s", user, pass);
     client_send_cmd(&cmd);
